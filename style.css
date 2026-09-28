@@ -1,0 +1,102 @@
+/* CONFIURACIÓN GENERAL */
+
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: beige;
+     color: rgb(82, 66, 58);
+ }
+
+
+ /* ENCABEZADO */
+
+ header{
+    background-color:rgb(82, 66, 58);
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* MENÚ */
+
+ nav{
+    background-color: rgb(103, 73, 70);
+    text-align: center;
+    padding: 15px;
+ }
+
+ nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+ }
+
+
+ /* CONTENIDO PRINCIPAL */
+
+ main{
+    padding: 30px;
+ }
+
+
+ /* SECCIÓN PRINCIPAL */
+
+ .principal {
+    background-color: blue;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+ }
+
+ .principal h2 {
+    font-size: 30px;
+ }
+
+
+ /* BOTÓN */
+
+ button {
+    background-color: brown;
+    color: beige;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+ }
+
+/* SECCIÓN DE TARJETAS */
+
+.tarjetas {
+text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+background-color: blue;
+color: beige;
+text-align: center;
+padding: 20px;
+}
