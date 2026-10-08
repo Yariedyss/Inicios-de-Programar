@@ -2,7 +2,7 @@
  
 body {
    margin: 0;
-   font-family: Arial, sans-serif;
+   font-family: 'Anton', sans-serif;
    background-color: black;
    color: white;
 }
@@ -11,6 +11,7 @@ body {
  /* ENCABEZADO */
  
 header{
+   position: relative;
    background-color:black;
    color: white;
    text-align: left;
@@ -18,32 +19,34 @@ header{
 }
  
 header h4 {
-   color: rgb(255, 106, 0);
+   color: white;
    margin: 0;
-   font-size: 25px;
+   font-size: 20px;
    padding: 20px;
 }
  
+.btn-signin{
+    background:#ff6b00;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
 header h1 {
    margin: 0;
-   font-size: 90px;
-   padding: 20px;
+   font-size: 80px;
+   padding: 0;
 }
 .color-especial {
   color: rgb(255, 106, 0);
 }
  
-header h4 {
-   font-size: 20px;
-   padding: 20px;
-}
- 
- 
  /* MENÚ */
  
 nav{
    background-color: white;
-   text-align: center;
+   text-align: right;
    padding: 15px;
 }
  
@@ -62,9 +65,11 @@ main{
  
  
  /* SECCIÓN PRINCIPAL */
+
  
 .principal {
-   background-color: blue;
+   background-color: white;
+   color: black;
    text-align: center;
    padding: 40px;
    border-radius: 10px;
@@ -77,14 +82,60 @@ main{
  
  
  /* BOTÓN */
- 
+
 button {
    background-color: rgb(255, 106, 0);
    color: white;
-   border: none;
+   border: 0;
    padding: 12px 25px;
    border-radius: 6px;
    cursor: pointer;
+}
+ 
+.navbar{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;
+   box-sizing: border-box;
+}
+
+.logo img{
+   display: block;
+   height: 48px;
+   width: auto;
+}
+
+.menu{
+    display: flex;
+    gap: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ff6b00;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.signin{
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: bold;
 }
  
  
@@ -99,7 +150,8 @@ button {
    width: 25%;
    margin: 10px;
    padding: 20px;
-   background-color: blue;
+   background-color: #f0f0f0;
+   color: #333;
    border-radius: 10px;
 }
  
@@ -107,8 +159,9 @@ button {
 /* PIE DE PÁGINA */
  
 footer {
-   background-color: blue;
-   color: White;
+   background-color: #f0f0f0;
+   color: #333;
    text-align: center;
    padding: 20px;
 }
+
