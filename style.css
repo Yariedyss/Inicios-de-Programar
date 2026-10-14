@@ -3,7 +3,7 @@
 body {
    margin: 0;
    font-family: 'Anton', sans-serif;
-   background-color: black;
+   background-color:rgb(34, 33, 33) ;
    color: white;
 }
  
@@ -11,17 +11,24 @@ body {
  /* ENCABEZADO */
  
 header{
-   position: relative;
+   position: left;
    background-color:black;
    color: white;
    text-align: left;
+   line-height: 0.9;
+   font-weight:400px;
    padding: 99px;
+   text-transform: uppercase;
+   margin: 0;
+   
 }
  
 header h4 {
-   color: white;
+   color: rgb(255, 106, 0);
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 6px;
    margin: 0;
-   font-size: 20px;
+   font-size: 12px;
    padding: 20px;
 }
  
@@ -41,7 +48,31 @@ header h1 {
 .color-especial {
   color: rgb(255, 106, 0);
 }
- 
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.stat h2{
+    color: white;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+
+.stat p{
+    color: #9a9a9a;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+
  /* MENÚ */
  
 nav{
@@ -99,22 +130,27 @@ button {
    right: 0;
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 35px;
 
     padding: 15px 50px;
    box-sizing: border-box;
 }
 
+.logo{
+   margin-right: auto;
+}
+
 .logo img{
    display: block;
-   height: 48px;
+   height: 60px;
    width: auto;
 }
 
 .menu{
     display: flex;
-    gap: 35px;
+    gap: 16px;
 }
 
 .menu a{
@@ -122,6 +158,7 @@ button {
     color: #ff6b00;
     font-size: 20px;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 .menu a:hover{
