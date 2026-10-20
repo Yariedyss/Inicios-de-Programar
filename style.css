@@ -20,9 +20,18 @@ header{
    padding: 99px;
    text-transform: uppercase;
    margin: 0;
+
    
 }
- 
+
+.hero{
+padding: 120px 100px;
+}
+
+.hero-content{
+    max-width: 700px;
+}
+
 header h4 {
    color: rgb(255, 106, 0);
    font-family: 'Montserrat', sans-serif;
@@ -135,7 +144,7 @@ button {
     gap: 35px;
 
     padding: 15px 50px;
-   box-sizing: border-box;
+   box-sizing: border-box;   
 }
 
 .logo{
