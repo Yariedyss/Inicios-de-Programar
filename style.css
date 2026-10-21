@@ -1,213 +1,258 @@
-/* CONFIURACIÓN GENERAL */
- 
+/* ===================================== */
+/* CONFIGURACIÓN GENERAL */
+/* ===================================== */
 body {
-   margin: 0;
-   font-family: 'Anton', sans-serif;
-   background-color:rgb(34, 33, 33) ;
-   color: white;
-}
- 
- 
- /* ENCABEZADO */
- 
-header{
-   position: left;
-   background-color:black;
-   color: white;
-   text-align: left;
-   line-height: 0.9;
-   font-weight:400px;
-   padding: 99px;
-   text-transform: uppercase;
-   margin: 0;
-
-   
-}
-
-.hero{
-padding: 120px 100px;
-}
-
-.hero-content{
-    max-width: 700px;
-}
-
-header h4 {
-   color: rgb(255, 106, 0);
-   font-family: 'Montserrat', sans-serif;
-   letter-spacing: 6px;
-   margin: 0;
-   font-size: 12px;
-   padding: 20px;
-}
- 
-.btn-signin{
-    background:#ff6b00;
-    color:white;
-    padding:12px 30px;
-    border-radius:30px;
-    text-decoration:none;
-}
-
-header h1 {
-   margin: 0;
-   font-size: 80px;
-   padding: 0;
-}
-.color-especial {
-  color: rgb(255, 106, 0);
-}
-
-.stats{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    padding-top: 40px;
-    border-top: 1px solid #333;
-}
-
-.stat h2{
-    color: white;
-    font-size: 60px;
-    font-family: 'Anton', sans-serif;
     margin: 0;
+    font-family: 'Anton', sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: white;
 }
 
-.stat p{
-    color: #9a9a9a;
-    font-size: 20px;
+
+/* ===================================== */
+/* HEADER */
+/* ===================================== */
+
+header {
+    background-color: rgb(5, 7, 12);
+;
+    color: white;
+    text-align: left;
+    padding: 120px 0 0 0px;
+    line-height: 0.9;
+}
+
+header{
+    padding-top: 150px;
+}
+
+
+/* ===================================== */
+/* NAVBAR */
+/* ===================================== */
+
+.navbar {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-
- /* MENÚ */
- 
-nav{
-   background-color: white;
-   text-align: right;
-   padding: 15px;
-}
- 
-nav a {
-   color: black;
-   text-decoration: none;
-   margin: 0 15px;
-}
- 
- 
- /* CONTENIDO PRINCIPAL */
- 
-main{
-   padding: 30px;
- }
- 
- 
- /* SECCIÓN PRINCIPAL */
-
- 
-.principal {
-   background-color: white;
-   color: black;
-   text-align: center;
-   padding: 40px;
-   border-radius: 10px;
-   margin-bottom: 30px;
-}
- 
-.principal h2 {
-   font-size: 30px;
-}
- 
- 
- /* BOTÓN */
-
-button {
-   background-color: rgb(255, 106, 0);
-   color: white;
-   border: 0;
-   padding: 12px 25px;
-   border-radius: 6px;
-   cursor: pointer;
-}
- 
-.navbar{
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-    background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 35px;
 
-    padding: 15px 50px;
-   box-sizing: border-box;   
+    padding: 10px 50px;
+    background-color: black;
+    box-sizing: border-box;
+
+    z-index: 1000;
+
 }
 
-.logo{
-   margin-right: auto;
+
+/* Logo */
+
+.logo {
+    margin-right: auto;
 }
 
-.logo img{
-   display: block;
-   height: 60px;
-   width: auto;
+.logo img {
+    display: block;
+    height: 80px;
+    width: auto;
 }
 
-.menu{
+
+/* Menú */
+
+.menu {
     display: flex;
     gap: 16px;
 }
 
-.menu a{
-    text-decoration: none;
-    color: #ff6b00;
+.menu a {
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-weight: 500;
+    color: #ff6b00;
+    text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: white;
 }
 
-.signin{
+
+/* Botón Sign In */
+
+.signin {
     background-color: #ff6b00;
     color: white;
     text-decoration: none;
-
-    padding: 12px 35px;
+    padding: 12px 10px;
     border-radius: 30px;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
- 
- 
- /* SECCIÓN DE TARJETAS */
- 
+
+
+/* ===================================== */
+/* HERO SECTION */
+/* ===================================== */
+
+.hero{
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+.hero h4{
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin-left: 0;
+    text-align: left;
+}
+
+header h4 {
+   color:  #ff6b00;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 4px;
+   
+
+   font-size: 15px;
+   padding: 0px;
+}
+
+
+.hero-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 1.0;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.color-especial {
+    color: #ff6b00;
+}
+
+.descripcion {
+    font-family: 'Montserrat', sans-serif;
+    color: #9a9a9a;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+
+/* ===================================== */
+/* ESTADÍSTICAS */
+/* ===================================== */
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 50px;
+    padding-top: 40px;
+
+    border-top: 1px solid #333;
+}
+
+.stat h2 {
+   color: white;
+   font-size: 60px;
+   margin: 0;
+}
+
+.stat p {
+   color: #9a9a9a;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   margin-top: 10px;
+}
+
+
+/* ===================================== */
+/* CONTENIDO PRINCIPAL */
+/* ===================================== */
+
+main {
+    padding: 30px;
+}
+
+
+/* ===================================== */
+/* SECCIÓN PRINCIPAL */
+/* ===================================== */
+
+.principal {
+    background-color: white;
+    color: black;
+    text-align: center;
+
+    padding: 40px;
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+}
+
+.principal h2 {
+    font-size: 30px;
+}
+
+
+/* ===================================== */
+/* BOTONES */
+/* ===================================== */
+
+button {
+   background-color: #ff6b00;
+   color: white;
+
+   border: none;
+   border-radius: 6px;
+
+   padding: 12px 25px;
+
+   cursor: pointer;
+}
+
+
+/* ===================================== */
+/* TARJETAS */
+/* ===================================== */
+
 .tarjetas {
-   text-align: center;
+    text-align: center;
 }
- 
+
 .tarjeta {
-   display: inline-block;
-   width: 25%;
-   margin: 10px;
-   padding: 20px;
-   background-color: #f0f0f0;
-   color: #333;
-   border-radius: 10px;
+    display: inline-block;
+
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+
+    background-color: #f0f0f0;
+    color: #333;
+
+    border-radius: 10px;
 }
- 
- 
-/* PIE DE PÁGINA */
- 
+
+
+/* ===================================== */
+/* FOOTER */
+/* ===================================== */
+
 footer {
    background-color: #f0f0f0;
    color: #333;
    text-align: center;
-   padding: 20px;
+   padding: 20px;  
 }
 
