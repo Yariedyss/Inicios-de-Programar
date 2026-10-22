@@ -15,7 +15,14 @@
    
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
    <link rel="stylesheet" href="style.css">
+   
+
+</body>
 </head>
 
 <body>
@@ -55,8 +62,43 @@
       <!-- HERO SECTION -->
       <!-- ========================= -->
 
-      <!-- Etiqueta -->
-       <section class="hero">
+      <!-- Carrusel Inicio -->
+             <section class="hero">
+
+    <!-- Carrusel -->
+    <div class="background-carousel">
+
+        <div id="carouselPrime"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel"
+             data-bs-interval="8000">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="Imagenes PRIME/American.png" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Imagenes PRIME/Futbol.png" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Imagenes PRIME/Trotar.png" class="d-block w-100" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fondo oscuro -->
+    <div class="overlay"></div>
+
+    <!-- Contenido -->
+    <div class="hero-content">
+
       <h4>SPORTS PLATFORM</h4>
 
       <!-- Título Principal -->
@@ -80,17 +122,17 @@
       <section class="stats">
 
          <div class="stat">
-            <h2>+30</h2>
+<h2 class="counter" data-target="30">0</h2>
             <p>Courts Available</p>
          </div>
 
          <div class="stat">
-            <h2>+50</h2>
+<h2 class="counter" data-target="50">0</h2>
             <p>Certified Coaches</p>
          </div>
 
          <div class="stat">
-            <h2>+500</h2>
+<h2 class="counter" data-target="500">0</h2>
             <p>Active Users</p>
          </div>
 
@@ -98,75 +140,385 @@
 
    </header>
 
-   <!-- ========================= -->
-   <!-- MAIN -->
-   <!-- ========================= -->
+<!-- ========================= -->
+<!-- PROFILE SECTION -->
+<!-- ========================= -->
 
-   <main>
+<section class="profile-section">
 
-      <!-- ========================= -->
-      <!-- SECCIÓN PRINCIPAL -->
-      <!-- ========================= -->
+    <h4>YOUR PROFILE</h4>
 
-      <section id="inicio" class="principal">
+    <h2>
+        YOUR PROGRESS, ALWAYS IN VIEW.
+    </h2>
 
-         <h1>YOUR PROGRESS, ALWAYS IN VIEW.</h1>
+    <p>
+        A personal dashboard with your favorite sports,
+        stats, and upcoming matches, ready as soon as you log in.
+    </p>
 
-         <p>
-            Esta aplicación fue creada utilizando
-            HTML y CSS.
-         </p>
+    <div class="profile-container">
 
-         <button>Conocer más</button>
+        <!-- TARJETA PERFIL -->
+        <div class="profile-card">
 
-      </section>
+            <div class="user-info">
+                <div class="avatar">JR</div>
 
-      <!-- ========================= -->
-      <!-- TARJETAS -->
-      <!-- ========================= -->
+                <div>
+                    <h3>Julia Reyes</h3>
+                    <p>Panama City · Intermediate level</p>
+                </div>
+            </div>
 
-      <section id="Mis canchas" class="tarjetas">
+            <div class="sports-tags">
+                <span>Soccer 5-a-side</span>
+                <span>Padel</span>
+                <span>Running</span>
+            </div>
 
-         <h2>¿Qué ofrecemos?</h2>
+            <div class="stats-boxes">
 
-         <!-- Tarjeta 1 -->
-         <div class="tarjeta">
-            <h3>Innovación</h3>
+                <div class="box">
+                    <h3>42</h3>
+                    <p>MATCHES</p>
+                </div>
+
+                <div class="box">
+                    <h3>19</h3>
+                    <p>WORKOUTS</p>
+                </div>
+
+                <div class="box">
+                    <h3>7</h3>
+                    <p>ACHIEVEMENTS</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRÓXIMOS PARTIDOS -->
+        <div class="matches-card">
+
+            <h4>UPCOMING MATCHES</h4>
+
+            <div class="match">
+
+                <div class="date">
+                    <span>18</span>
+                    <small>JUL</small>
+                </div>
+
+                <div>
+                    <h3>Soccer 5 – Los Halcones</h3>
+                    <p>Estadio Agustín "Muquita" Sánchez · 7:00 PM</p>
+                </div>
+
+            </div>
+
+            <div class="match">
+
+                <div class="date">
+                    <span>21</span>
+                    <small>JUL</small>
+                </div>
+
+                <div>
+                    <h3>Coaching session – Padel</h3>
+                    <p>Complejo Deportivo de La Feria · 6:30 AM</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SPORTS COURTS SECTION -->
+<!-- ========================= -->
+
+<section class="courts-section">
+
+    <h4>SPORTS COURTS</h4>
+
+    <h2>
+        BOOK YOUR COURT IN <br>
+        UNDER A MINUTE.
+    </h2>
+
+    <div class="courts-top">
+
+        <button class="sport-filter">
+            All Sports
+        </button>
+
+        <a href="#" class="map-btn">
+            View Interactive Map
+        </a>
+
+    </div>
+
+    <div class="courts-grid">
+
+        <!-- CARD 1 -->
+        <div class="court-card">
+
+            <img src="Imagenes PRIME/MunicipalPool.png" alt="Pool">
+
+            <div class="rating">★ 4.6</div>
+
+            <div class="court-info">
+
+                <h3>La Chorrera Municipal Pool</h3>
+
+                <p>La Chorrera, Panama West</p>
+
+                <h4>$25 <span>/ hour</span></h4>
+
+                <button>Book Court</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="court-card">
+
+            <img src="Imagenes PRIME/VolleyCourt.png" alt="Volley Court">
+
+            <div class="rating">★ 4.7</div>
+
+            <div class="court-info">
+
+                <h3>La Chorrera Volley Court</h3>
+
+                <p>La Chorrera, Panama West</p>
+
+                <h4>$40 <span>/ hour</span></h4>
+
+                <button>Book Court</button>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="court-card">
+
+            <img src="Imagenes PRIME/turfPitch.png" alt="Turf Pitch">
+
+            <div class="rating">★ 4.8</div>
+
+            <div class="court-info">
+
+                <h3>La Chorrera Turf Pitch</h3>
+
+                <p>La Chorrera, Panama West</p>
+
+                <h4>$28 <span>/ hour</span></h4>
+
+                <button>Book Court</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SIGN IN SECTION -->
+<!-- ========================= -->
+
+<section class="signin-section">
+
+    <div class="signin-left">
+
+        <h4>ACCOUNT</h4>
+
+        <h2>SIGN IN</h2>
+
+        <form class="signin-form">
+
+            <label>EMAIL</label>
+            <input type="email" placeholder="youremail@example.com">
+
+            <label>PASSWORD</label>
+            <input type="password" placeholder="At least 8 characters">
+
+            <div class="signin-options">
+
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#">Forgot password?</a>
+
+            </div>
+
+            <button type="submit" class="signin-btn">
+                SIGN IN
+            </button>
+
+        </form>
+
+        <div class="divider">
+            <span>or continue with</span>
+        </div>
+
+        <div class="social-buttons">
+
+            <button class="social-btn">
+                Google
+            </button>
+
+            <button class="social-btn">
+                Apple
+            </button>
+
+        </div>
+
+        <p class="create-account">
+            Don't have an account?
+            <a href="#">Create one</a>
+        </p>
+
+    </div>
+
+    <div class="signin-right">
+
+       <div class="faq">
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            <span>How do I create an account?</span>
+            <span class="icon">+</span>
+        </button>
+
+        <div class="faq-answer">
             <p>
-               Creamos soluciones utilizando tecnología.
+                Click "Create one" on the left, fill in your
+                name, email and password, then hit
+                "Create account". You're ready to join the community.
             </p>
-         </div>
+        </div>
 
-         <!-- Tarjeta 2 -->
-         <div class="tarjeta">
-            <h3>Creatividad</h3>
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Is my data secure?</span>
+            <span class="icon">+</span>
+        </button>
+
+        <div class="faq-answer">
             <p>
-               Transformamos ideas en proyectos.
+                Yes. Your data is encrypted and handled securely.
             </p>
-         </div>
+        </div>
 
-         <!-- Tarjeta 3 -->
-         <div class="tarjeta">
-            <h3>Tecnología</h3>
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Can I sign in with Google or Apple?</span>
+            <span class="icon">+</span>
+        </button>
+
+        <div class="faq-answer">
             <p>
-               Utilizamos herramientas digitales.
+                Yes, social login options are available.
             </p>
-         </div>
+        </div>
 
-      </section>
+    </div>
 
-   </main>
+</div>
+
+</section>
+
+
 
    <!-- ========================= -->
    <!-- FOOTER -->
    <!-- ========================= -->
 
-   <footer id="contacto">
+  <footer class="footer">
 
-      <p>© 2026 PRIME. All Rights Reserved.</p>
+    <div class="footer-container">
 
-   </footer>
+        <!-- Columna 1 -->
+        <div class="footer-brand">
 
+            <h2>PRIME<span>.</span></h2>
+
+            <p>
+                Connect, train, and play.
+                The platform that unites the sports community.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">IG</a>
+                <a href="#">FB</a>
+                <a href="#">TT</a>
+
+            </div>
+
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="footer-column">
+
+            <h4>NAVIGATION</h4>
+
+            <a href="#">Home</a>
+            <a href="#">Courts</a>
+            <a href="#">Coaches</a>
+
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="footer-column">
+
+            <h4>COMMUNITY</h4>
+
+            <a href="#">Groups</a>
+            <a href="#">Blog</a>
+
+        </div>
+
+        <!-- Columna 4 -->
+        <div class="footer-column">
+
+            <h4>LEGAL</h4>
+
+            <a href="#">Terms and Conditions</a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Prime. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="interaction.js"></script>
+<button id="topBtn">↑</button>
 </body>
 
 
