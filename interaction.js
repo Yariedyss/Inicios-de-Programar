@@ -58,7 +58,7 @@ counters.forEach(counter => {
 
     const updateCounter = () => {
 
-        const increment = target / 200;
+        const increment = target / 150;
 
         if (count < target) {
 
