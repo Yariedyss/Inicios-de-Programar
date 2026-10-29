@@ -46,11 +46,11 @@
 
          <!-- Menú -->
          <div class="menu">
-            <a href="inicio">Home</a>
-            <a href="courts">Courts</a>
-            <a href="community">Community</a>
-            <a href="blog">Blog</a>
-            <a href="contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#courts">Courts</a>
+            <a href="#community">Community</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
          </div>
 
          <!-- Botón Sign In -->
@@ -62,8 +62,7 @@
       <!-- HERO SECTION -->
       <!-- ========================= -->
 
-      <!-- Carrusel Inicio -->
-             <section class="hero">
+             <section class="hero" id="home">
 
     <!-- Carrusel -->
     <div class="background-carousel">
@@ -241,7 +240,7 @@
 <!-- SPORTS COURTS SECTION -->
 <!-- ========================= -->
 
-<section class="courts-section">
+<section class="courts-section" id="courts">
 
     <h4>SPORTS COURTS</h4>
 
@@ -256,9 +255,15 @@
             All Sports
         </button>
 
-        <a href="#" class="map-btn">
-            View Interactive Map
-        </a>
+
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=Sports+courts+La+Chorrera+Panama"
+        class="map-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+>
+        View Interactive Map
+    </a>
 
     </div>
 
@@ -335,7 +340,7 @@
 <!-- SIGN IN SECTION -->
 <!-- ========================= -->
 
-<section class="signin-section">
+<section class="signin-section" id="signin">
 
     <div class="signin-left">
 
@@ -517,6 +522,91 @@
 </footer>
 
 
+<!-- ========================= -->
+<!-- COMMUNITY -->
+<!-- ========================= -->
+
+<section class="community">
+    <div class="community-header">
+        <div class="community-text">
+            <span class="section-tag">COMMUNITY</span>
+
+            <h2>
+                FIND YOUR <br>
+                NEXT TEAM.
+            </h2>
+
+            <p>
+                Create groups, organize matches, and share your progress
+                with people who train like you.
+            </p>
+        </div>
+
+        <a href="#" class="read-more-btn">
+            Read more →
+        </a>
+    </div>
+
+    <div class="community-cards">
+
+        <div class="community-card">
+            <div class="card-top">
+                <div class="avatars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <h3>Los Halcones FC</h3>
+                    <small>14 members · Soccer 5</small>
+                </div>
+            </div>
+
+            <p>
+                Looking for 2 players for Saturday's match in Costa del Este.
+                Intermediate level.
+            </p>
+
+            <hr>
+
+            <div class="card-footer">
+                <span>♥ 32</span>
+                <span>💬 8 comments</span>
+                <span>↗ Share</span>
+            </div>
+        </div>
+
+        <div class="community-card">
+            <div class="card-top">
+                <div class="avatars">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <h3>Padel at Dawn</h3>
+                    <small>9 members · Padel</small>
+                </div>
+            </div>
+
+            <p>
+                Recurring group every Tuesday 6:00 AM in Albrook.
+                Recommended for beginner level.
+            </p>
+
+            <hr>
+
+            <div class="card-footer">
+                <span>♥ 21</span>
+                <span>💬 5 comments</span>
+                <span>↗ Share</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <script src="interaction.js"></script>
 <button id="topBtn">↑</button>
 
@@ -524,5 +614,3 @@
 
 
 </html>
-
-
